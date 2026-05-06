@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "multiworld-inventories",
+  "version": "${version}",
+  "name": "multiworld-inventories",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/multiworld-inventories/icon.png",
+  "accessWidener": "multiworld-inventories.accesswidener",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "org.orsa.multiworldInventories.MultiworldInventories"
+    ],
+    "cardinal-components": [
+      "org.orsa.multiworldInventories.ModComponents"
+    ]
+  },
+  "mixins": [
+    "multiworld-inventories.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}",
+    "multiworld": "*",
+    "cardinal-components": "*",
+    "cloth-config": "*"
+  },
+  "custom": {
+    "cardinal-components": [
+      "multiworld-inventories:per_world_inventory"
+    ]
+  }
+}
