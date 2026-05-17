@@ -9,7 +9,7 @@ import org.ladysnake.cca.api.v3.entity.RespawnCopyStrategy;
 
 public class ModComponents implements EntityComponentInitializer {
 
-   public static final Identifier PER_WORLD_INV_ID = Identifier.fromNamespaceAndPath("multiworld-inventories", "per_world_inventory");
+   public static final Identifier PER_WORLD_INV_ID = Identifier.fromNamespaceAndPath("multiworld-squid", "per_world_inventory");
    public static final ComponentKey<MultiworldInventoryComponent> PER_WORLD_INV_KEY = ComponentRegistryV3.INSTANCE.getOrCreate(PER_WORLD_INV_ID, MultiworldInventoryComponent.class);
 
    public void registerEntityComponentFactories(EntityComponentFactoryRegistry registry) {

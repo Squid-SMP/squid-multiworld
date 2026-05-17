@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "id": "multiworld-inventories",
+  "id": "multiworld-squid",
   "version": "${version}",
-  "name": "multiworld-inventories",
+  "name": "multiworld-squid",
   "description": "",
   "authors": [],
   "contact": {},
   "license": "All-Rights-Reserved",
-  "icon": "assets/multiworld-inventories/icon.png",
-  "accessWidener": "multiworld-inventories.accesswidener",
+  "icon": "assets/multiworld-squid/icon.png",
+  "accessWidener": "multiworld-squid.accesswidener",
   "environment": "server",
   "entrypoints": {
     "main": [
@@ -19,8 +19,11 @@
     ]
   },
   "mixins": [
-    "multiworld-inventories.mixins.json"
+    "multiworld-squid.mixins.json"
   ],
+  "suggests": {
+    "luckperms": "*"
+  },
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
@@ -31,7 +34,7 @@
   },
   "custom": {
     "cardinal-components": [
-      "multiworld-inventories:per_world_inventory"
+      "multiworld-squid:per_world_inventory"
     ]
   }
 }
