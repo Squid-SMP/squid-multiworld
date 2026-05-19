@@ -4,6 +4,7 @@
   "package": "org.orsa.multiworldInventories.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "EntityMixin"
   ],
   "client": [
   ],

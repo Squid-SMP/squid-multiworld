@@ -19,14 +19,14 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class MultiworldInventories implements ModInitializer {
-   public static final String MOD_ID = "MultiworldInventories";
-   public static final Logger LOGGER = LoggerFactory.getLogger("MultiworldInventories");
+public class MultiworldSquid implements ModInitializer {
+   public static final String MOD_ID = "MultiworldSquid";
+   public static final Logger LOGGER = LoggerFactory.getLogger("MultiworldSquid");
 
    public void onInitialize() {
       AutoConfig.register(ModConfig.class, GsonConfigSerializer::new);
 
-      ServerEntityWorldChangeEvents.AFTER_PLAYER_CHANGE_WORLD.register(MultiworldInventories::afterPlayerChangeWorld);
+      ServerEntityWorldChangeEvents.AFTER_PLAYER_CHANGE_WORLD.register(MultiworldSquid::afterPlayerChangeWorld);
    }
 
    private static void afterPlayerChangeWorld(ServerPlayer player, ServerLevel origin, ServerLevel destination) {

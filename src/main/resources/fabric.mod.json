@@ -12,7 +12,7 @@
   "environment": "server",
   "entrypoints": {
     "main": [
-      "org.orsa.multiworldInventories.MultiworldInventories"
+      "org.orsa.multiworldInventories.MultiworldSquid"
     ],
     "cardinal-components": [
       "org.orsa.multiworldInventories.ModComponents"

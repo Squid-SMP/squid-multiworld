@@ -71,6 +71,10 @@ public class MultiworldInventoryComponent implements ComponentV3, AutoSyncedComp
       }
    }
 
+   public boolean isEmpty() {
+      return inventories.isEmpty();
+   }
+
    public void writeData(ValueOutput out) {
       Map<String, PlayerInventorySnapshot> rawHashMap = new HashMap<>();
       inventories.forEach((id, snapshot) -> rawHashMap.put(id.toString(), snapshot));
