@@ -3,7 +3,7 @@ package org.orsa.multiworldInventories;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.entity.event.v1.ServerEntityWorldChangeEvents;
+import net.fabricmc.fabric.api.entity.event.v1.ServerEntityLevelChangeEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerLevel;
@@ -26,7 +26,7 @@ public class MultiworldSquid implements ModInitializer {
    public void onInitialize() {
       AutoConfig.register(ModConfig.class, GsonConfigSerializer::new);
 
-      ServerEntityWorldChangeEvents.AFTER_PLAYER_CHANGE_WORLD.register(MultiworldSquid::afterPlayerChangeWorld);
+      ServerEntityLevelChangeEvents.AFTER_PLAYER_CHANGE_LEVEL.register(MultiworldSquid::afterPlayerChangeWorld);
    }
 
    private static void afterPlayerChangeWorld(ServerPlayer player, ServerLevel origin, ServerLevel destination) {
