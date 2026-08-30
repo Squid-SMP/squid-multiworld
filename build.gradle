@@ -18,7 +18,7 @@ repositories {
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/multiworld-squid.accesswidener")
+    accessWidenerPath = file("src/main/resources/squid-multiworld.accesswidener")
 }
 
 dependencies {

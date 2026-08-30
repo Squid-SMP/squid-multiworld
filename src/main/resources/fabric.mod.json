@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "id": "multiworld-squid",
+  "id": "squid-multiworld",
   "version": "${version}",
-  "name": "multiworld-squid",
+  "name": "Squid Multiworld",
   "description": "",
   "authors": [],
   "contact": {},
   "license": "All-Rights-Reserved",
   "icon": "assets/multiworld-squid/icon.png",
-  "accessWidener": "multiworld-squid.accesswidener",
+  "accessWidener": "squid-multiworld.accesswidener",
   "environment": "server",
   "entrypoints": {
     "main": [
@@ -19,7 +19,7 @@
     ]
   },
   "mixins": [
-    "multiworld-squid.mixins.json"
+    "squid-multiworld.mixins.json"
   ],
   "suggests": {
     "luckperms": "*"
